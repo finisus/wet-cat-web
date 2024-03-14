@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'comic';
+  src: url(./metadata/fonts/ldf-comicSans-hairline.ttf);
+}
+@font-face {
+  font-family: 'comic-medium';
+  src: url(./metadata/fonts/ldf-comicSans-medium.ttf);
+}
+
+/*
+colors:
+purpleDark: #282734
+darkGrey: #24272b
+tolyPurple: #9d87b2
+tolyTeal: #3da5a9
+Base: #dce0e8
+Text: #4c4f69
+*/
+
+body {
+  font-family: 'comic';
+  color: #4c4f69;
+  background-color: #dce0e8;
+  margin: 0;
+}
+
+/*-------------------------
+    Header
+-------------------------*/
+header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: fixed;
+  top: 0;
+  height: 58px;
+  width: 100%;
+  background-color: #f9e2af;
+  border-bottom: 3px solid #fab387;
+}
+header button {
+  background: none;
+  border: none;
+  cursor: pointer !important;
+}
+.header-item {
+  font-family: 'comic-medium';
+  font-size: 18px;
+  color: black;
+  cursor: pointer !important;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  gap: 12px;
+  align-self: center;
+  justify-self: end;
+  margin-right: 12px;
+}
+.social-btn {
+  width: 32px;
+  height: auto;
+  border: none;
+  cursor: pointer !important;
+}
+
+/*-------------------------
+    Footer
+-------------------------*/
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  height: 58px;
+  width: 100%;
+  background-color: #f2cdcd;
+  border-top: 3px solid #eba0ac;
+}
+.contract-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: auto;
+}
+footer p {
+  font-family: 'comic';
+  color: black;
+  font-size: 18px;
+  margin-top: 18px;
+  letter-spacing: 4px;
+}
+footer span {
+  font-family: 'comic';
+  color: black;
+  font-size: 16px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+#buy-btn {
+  font-family: 'comic-medium';
+  font-size: 14px;
+  text-align: center !important;
+  color: #4c4f69;
+  height: 32px;
+  width: 66px;
+  padding: 0;
+  background-color: #a6e3a1;
+  border: 2px solid #eba0ac;
+  border-radius: 12px;
+  align-self: center;
+  margin-left: 12px;
+  margin-right: auto;
+  cursor: pointer !important;
+}
+#buy-btn:hover {
+  font-size: 14px;
+  border: 3px solid #a6e3a1;
+  background-color: #eba0ac;
+  color: white;
+}
+
+/*-------------------------
+    Mobile Optimzations
+-------------------------*/
+@media screen and (max-width: 659px) {
+  /* footer */
+  .contract-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  footer p {
+    font-family: 'comic';
+    font-size: 18px;
+    margin-top: 8px;
+    letter-spacing: 1px;
+  }
+  footer span {
+    font-family: 'comic';
+    font-size: 12px;
+    margin-top: -26px;
+    letter-spacing: 0px;
+  }
+  #buy-btn {
+    font-family: 'comic-medium';
+    font-size: 14px;
+    text-align: center !important;
+    color: #4c4f69;
+    height: 32px;
+    width: 66px;
+    padding: 0;
+    background-color: #a6e3a1;
+    border: 2px solid #eba0ac;
+    border-radius: 12px;
+    align-self: center;
+    margin-left: 12px;
+    margin-right: auto;
+    cursor: pointer !important;
+  }
+}
